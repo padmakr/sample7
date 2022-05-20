@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+	background: #fdfdfd;
+	height: 100vh;
+	font-family: "monospace";
+}
+
+.main {
+	margin-top: 80px;
+}
+
+.linkBtn {
+	color: #d11a2a;
+	font-weight: bold;
+	cursor: pointer;
+}

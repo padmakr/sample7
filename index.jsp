@@ -19,7 +19,7 @@
 		<div class="row h-100 align-items-center justify-content-center">
 			<div class="col-md-5">
 				<h1 class="text-center">Hello, Welcome!</h1>
-				<a class="btn btn-lg btn-dark btn-block p-3 mt-4" href="list.jsp">Click
+				<a class="btn btn-lg btn-dark btn-block p-3 mt-4" href="list">Click
 					Here!</a>
 			</div>
 		</div>

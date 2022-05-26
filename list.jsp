@@ -1,3 +1,4 @@
+<%@ include file="methods.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,10 +19,15 @@
 </head>
 <body>
 	<div class="container main animate__animated animate__fadeIn">
-		<div class="row mb-5 animate__animated animate__pulse">
-			<div class="col-md-4 col-sm-12 mb-2">
-				<a class="btn btn-lg btn-dark btn-block rounded-0" href="add.jsp">Add
+		<div class="row mb-5 animate__animated animate__pulse <%=hidden%> ">
+			<div class="col-md-3 col-sm-12 mb-2">
+				<a class="btn btn-lg btn-dark btn-block rounded-0" href="add">Add
 					New <i class="bi bi-person-plus"></i>
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-12 mb-2">
+				<a class="btn btn-lg btn-dark btn-block rounded-0" href="grid">Grid
+					System <i class="bi bi-grid-1x2-fill"></i>
 				</a>
 			</div>
 			<div class="col-md-5 col-sm-12 ml-auto">
@@ -29,11 +35,23 @@
 					<div class="input-group input-group-lg">
 						<input class="form-control" type="text" name="searchval"
 							placeholder="Enter your search term">
-						<a class="btn btn-lg btn-dark rounded-0" href="find.jsp">Find</a>
+						<a class="btn btn-lg btn-dark rounded-0" href="result">Find</a>
 					</div>
 				</form>
 			</div>
 		</div>
+
+		<div class="row row-cols-1 my-5 hidden <%=show%> ">
+			<div class="col mb-3">
+				<a class="link-light alert-light" href="list.jsp"> <i
+					class="bi bi-arrow-left-circle"></i> Go to list
+				</a>
+			</div>
+			<div class="col">
+				<h2 class="heading">Found Contacts:</h2>
+			</div>
+		</div>
+
 		<div class="table-responsive">
 			<!-- table starts here -->
 			<table class="table table-bordered table-striped">
@@ -42,79 +60,92 @@
 						<th>ID</th>
 						<th>Phone Number</th>
 						<th>First Name</th>
-						<th>Last Name</th>
+						<th>Lastname</th>
 						<th>Address1</th>
 						<th>Address2</th>
 						<th>City</th>
 						<th>State</th>
 						<th>Country</th>
-						<th>Actions</th>
+						<th class="<%=hidden%>">Actions</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>1</td>
-						<td>8904467526</td>
-						<td><a href="edit.jsp">Guruprasad</a></td>
-						<td>Naik</td>
+						<td>1765432890</td>
+						<td><a href="edit">Person 1</a></td>
+						<td>Lastname</td>
 						<td>Test Address1</td>
 						<td>Test Address2</td>
 						<td>Ankola</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>70228437017</td>
-						<td><a href="edit.jsp">Gangadhar</a></td>
-						<td>Shetti</td>
+						<td>2132456789</td>
+						<td><a href="edit">Person 2</a></td>
+						<td>Lastname</td>
 						<td>Test Address1</td>
 						<td>Test Address2</td>
 						<td>Ankola</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
 						<td>3</td>
 						<td>1234567890</td>
-						<td><a href="edit.jsp">Jimmy</a></td>
+						<td><a href="edit">Jimmy</a></td>
 						<td>F</td>
 						<td>Test Address1</td>
 						<td>Test Address2</td>
 						<td>Bangalore</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
 						<td>4</td>
 						<td>0987654321</td>
-						<td><a href="edit.jsp">Person2</a></td>
+						<td><a href="edit">Person4</a></td>
 						<td>Lastname</td>
 						<td>Test Address1</td>
 						<td>Test Address2</td>
 						<td>Dharwad</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
 						<td>5</td>
 						<td>1234523467</td>
-						<td><a href="edit.jsp">Akash</a></td>
-						<td>Naik</td>
+						<td><a href="edit">Person 5</a></td>
+						<td>Lastname</td>
 						<td>Nutan Nagar</td>
 						<td>Test Address2</td>
 						<td>Yellapur</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>1234523456</td>
+						<td><a href="edit">Person 8</a></td>
+						<td>Lastname</td>
+						<td>Nutan Nagar</td>
+						<td>Test Address2</td>
+						<td>Yellapur</td>
+						<td>Karnataka</td>
+						<td>India</td>
+						<td class="<%=hidden%>"><a class="linkBtn align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 				</tbody>

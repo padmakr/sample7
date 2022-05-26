@@ -19,19 +19,20 @@
 		<h1 class="text-center bg-light mb-3">Person Phonebook Entries</h1>
 		<div class="row row-cols-md-1 row-cols-sm-2 row-col-2 mb-5">
 			<div class="col-6 col-md-3 col-sm-6 mb-2">
-				<a class="btn btn-lg btn-dark col-sm-12 col-12 rounded-0" href="add">Add
-					New </a>
+				<a class="btn btn-sm btn-dark col-sm-12 col-12 rounded-0 p-md-2"
+					href="add">Add New </a>
 			</div>
 			<div class="col-6 col-md-4 col-sm-6 mb-2">
-				<a class="btn btn-lg btn-dark col-sm-12 col-12 rounded-0"
+				<a class="btn btn-sm btn-dark col-sm-12 col-12 rounded-0 p-md-2"
 					href="list">Table System </a>
 			</div>
 			<div class="col-12 col-md-5 col-sm-12 ml-auto">
 				<form action="find.jsp" method="POST">
-					<div class="input-group input-group-lg">
+					<div class="input-group input-group-md">
 						<input class="form-control" type="text" name="searchval"
 							placeholder="Enter your search term">
-						<a class="btn btn-lg btn-dark rounded-0" href="result">Find</a>
+						<a class="btn btn-sm btn-dark rounded-0 p-md-2 p-sm-2"
+							href="result">Find</a>
 					</div>
 				</form>
 			</div>
@@ -40,49 +41,51 @@
 			class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1  row-cols-1 g-5">
 			<div class="col">
 				<div class="card border">
-					<div class="row row-cols-2 row-sm-2 row-md-1 row-lg-1">
-						<div class="col-4 col-md-12">
-							<div class=" card-heading ">
-								<img class="rounded-circle" alt="harry" src="media/boy.jpeg">
+					<div class="row gx-0 gx-sm-0">
+						<div class="col-4 col-sm-4 col-md-12 m-0">
+							<div
+								class="card-heading d-flex justify-content-center align-items-center w-100 h-100 p-1 p-sm-1 p-md-4">
+								<img class="w-100 img-fluid rounded-circle p-sm-1 p-1"
+									alt="harry" src="media/boy.jpeg">
 							</div>
 						</div>
-						<div class="col-8 col-md-12">
+						<div class="col-8 col-sm-8 col-md-12 m-0">
 							<div class="card-body">
 								<div class="row row-cols-2">
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>FirstName:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Person 1</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Lastname:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>lastname</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Address:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Address1 and Address2</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>City:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>TestCity</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>State:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Test State</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Country:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>India</span>
 									</div>
 								</div>
@@ -90,16 +93,18 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<div class="row text-center">
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#deletemodalBox">
+						<div class="row">
+							<div class="col text-start">
+								<button class="btn btn-light img-fluid rounded-circle icon"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#deletemodalBox">
 									<i class="bi bi-trash"></i>
 								</button>
 							</div>
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#editmodalBox">
+							<div class="col text-end">
+								<button class="btn btn-light img-fluid rounded-circle icon mr-2"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#editmodalBox">
 									<i class="bi bi-pencil-square"></i>
 								</button>
 							</div>
@@ -109,49 +114,51 @@
 			</div>
 			<div class="col">
 				<div class="card border">
-					<div class="row row-cols-2 row-sm-2 row-md-1 row-lg-1">
-						<div class="col-4 col-md-12">
-							<div class=" card-heading ">
-								<img class="rounded-circle" alt="boy" src="media/mb.jpg">
+					<div class="row gx-0 gx-sm-0">
+						<div class="col-4 col-sm-4 col-md-12 m-0">
+							<div
+								class="card-heading d-flex justify-content-center align-items-center w-100 h-100 p-1 p-sm-1 p-md-4">
+								<img class="img-fluid  rounded-circle p-1 p-sm-1" alt="harry"
+									src="media/mb.jpg">
 							</div>
 						</div>
-						<div class="col-8 col-md-12">
+						<div class="col-8 col-sm-8 col-md-12 m-0">
 							<div class="card-body">
 								<div class="row row-cols-2">
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>FirstName:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Person 2</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Lastname:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
-										<span>lastname2</span>
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
+										<span>lastname</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Address:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Address1 and Address2</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>City:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>TestCity</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>State:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Test State</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Country:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>India</span>
 									</div>
 								</div>
@@ -159,16 +166,18 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<div class="row text-center">
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#deletemodalBox">
+						<div class="row">
+							<div class="col text-start">
+								<button class="btn btn-light img-fluid rounded-circle icon"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#deletemodalBox">
 									<i class="bi bi-trash"></i>
 								</button>
 							</div>
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#editmodalBox">
+							<div class="col text-end">
+								<button class="btn btn-light img-fluid rounded-circle icon mr-2"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#editmodalBox">
 									<i class="bi bi-pencil-square"></i>
 								</button>
 							</div>
@@ -178,49 +187,51 @@
 			</div>
 			<div class="col">
 				<div class="card border">
-					<div class="row row-cols-2 row-sm-2 row-md-1 row-lg-1">
-						<div class="col-4 col-md-12">
-							<div class=" card-heading ">
-								<img class="rounded-circle" alt="girl" src="media/girl.jpg">
+					<div class="row gx-0 gx-sm-0">
+						<div class="col-4 col-sm-4 col-md-12 m-0">
+							<div
+								class="card-heading d-flex justify-content-center align-items-center w-100 h-100 p-1 p-sm-1 p-md-4">
+								<img class="img-fluid  rounded-circle p-1 p-sm-1" alt="harry"
+									src="media/girl.jpg">
 							</div>
 						</div>
-						<div class="col-8 col-md-12">
-							<div class="card-body text-sm-start">
+						<div class="col-8 col-sm-8 col-md-12 m-0">
+							<div class="card-body">
 								<div class="row row-cols-2">
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>FirstName:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Person 3</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Lastname:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
-										<span>lastname3</span>
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
+										<span>lastname</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Address:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Address1 and Address2</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>City:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>TestCity</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>State:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>Test State</span>
 									</div>
-									<div class="col col-sm-4 col-md-4 col-lg-4 px-4 py-2">
+									<div class="col col-sm-4 col-md-4 col-lg-4 px-2 py-1">
 										<label>Country:</label>
 									</div>
-									<div class="col col-sm-8 col-md-8 col-lg-8 px-4 py-2">
+									<div class="col col-sm-8 col-md-8 col-lg-8 px-2 py-1">
 										<span>India</span>
 									</div>
 								</div>
@@ -228,16 +239,18 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<div class="row text-center">
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#deletemodalBox">
+						<div class="row">
+							<div class="col text-start">
+								<button class="btn btn-light img-fluid rounded-circle icon"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#deletemodalBox">
 									<i class="bi bi-trash"></i>
 								</button>
 							</div>
-							<div class="col">
-								<button class="btn btn-light rounded-circle icon" type="button"
-									data-bs-toggle="modal" data-bs-target="#editmodalBox">
+							<div class="col text-end">
+								<button class="btn btn-light img-fluid rounded-circle icon mr-2"
+									type="button" data-bs-toggle="modal"
+									data-bs-target="#editmodalBox">
 									<i class="bi bi-pencil-square"></i>
 								</button>
 							</div>
@@ -250,11 +263,8 @@
 	<div id="deletemodalBox" class="modal fade">
 		<div class="modal-dialog modal-dialog-centered ">
 			<div class="modal-content">
-				<div class="modal-header">
-					<p class="fw-bold fs-5 text-danger">Warning!</p>
-				</div>
 				<div class="modal-body">
-					<h3 id="warmintText">Are you Sure?</h3>
+					<h5 id="warmintText">Are you Sure?</h5>
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -267,11 +277,8 @@
 	<div id="editmodalBox" class="modal fade">
 		<div class="modal-dialog modal-dialog-centered ">
 			<div class="modal-content">
-				<div class="modal-header">
-					<p class="fw-bold fs-5 text-dark">Warning!</p>
-				</div>
 				<div class="modal-body">
-					<h3 id="warmintText">Want to edit?</h3>
+					<h5 id="warmintText">Want to edit?</h5>
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -284,8 +291,6 @@
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

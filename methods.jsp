@@ -1,11 +1,11 @@
 
 <%
-String hidden = "";
-String show = "";
+String hidden = "d-show";
+String show = "d-none";
 String name = config.getServletName();
 if (name.equals("Result")) {
-	hidden = "hidden";
-	show = "show";
+	hidden = "d-none";
+	show = "d-show";
 }
 
 String uri = request.getServletPath();

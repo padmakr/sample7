@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+body {
+	background: #fdfdfd;
+}
+
+.btn-dark {
+	background: #21587e;
+}
+
+.btn-dark:hover, btn-dark:active, btn-dark:focus, .linkBtn:focus,
+	.linkBtn:active {
+	background: #174b6e;
+}
+
+.table-dark {
+	background-color: #21587e;
+	border: none;
+}
+
+.heading {
+	color: #21587e;
+}
+
 .card, .card-body, .card-footer {
 	background: #4683b5;
 	border: 1px solid #000000;

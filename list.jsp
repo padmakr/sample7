@@ -18,15 +18,15 @@
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<div class="container main animate__animated animate__fadeIn">
+	<div class="container mt-5 animate__animated animate__fadeIn">
 		<div class="row mb-5 animate__animated animate__pulse <%=hidden%> ">
 			<div class="col-md-3 col-sm-12 mb-2">
-				<a class="btn btn-lg btn-dark btn-block rounded-0" href="add">Add
+				<a class="btn btn-md btn-dark btn-block rounded-0 p-2" href="add">Add
 					New <i class="bi bi-person-plus"></i>
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-12 mb-2">
-				<a class="btn btn-lg btn-dark btn-block rounded-0" href="grid">Grid
+				<a class="btn btn-md btn-dark btn-block  rounded-0 p-2" href="grid">Grid
 					System <i class="bi bi-grid-1x2-fill"></i>
 				</a>
 			</div>
@@ -35,20 +35,20 @@
 					<div class="input-group input-group-lg">
 						<input class="form-control" type="text" name="searchval"
 							placeholder="Enter your search term">
-						<a class="btn btn-lg btn-dark rounded-0" href="result">Find</a>
+						<a class="btn btn-md btn-dark rounded-0 p-2" href="result">Find</a>
 					</div>
 				</form>
 			</div>
 		</div>
 
-		<div class="row row-cols-1 my-5 hidden <%=show%> ">
+		<div class="row row-cols-1 my-5 <%=show%> ">
 			<div class="col mb-3">
 				<a class="link-light alert-light" href="list.jsp"> <i
 					class="bi bi-arrow-left-circle"></i> Go to list
 				</a>
 			</div>
 			<div class="col">
-				<h2 class="heading">Found Contacts:</h2>
+				<h2 class="heading fw-bold">Found Contacts:</h2>
 			</div>
 		</div>
 
@@ -80,7 +80,7 @@
 						<td>Ankola</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
@@ -93,7 +93,7 @@
 						<td>Ankola</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
@@ -106,7 +106,7 @@
 						<td>Bangalore</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
@@ -119,7 +119,7 @@
 						<td>Dharwad</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
@@ -132,7 +132,7 @@
 						<td>Yellapur</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 					<tr>
@@ -145,7 +145,7 @@
 						<td>Yellapur</td>
 						<td>Karnataka</td>
 						<td>India</td>
-						<td class="<%=hidden%>"><a class="linkBtn align-middle"
+						<td class="<%=hidden%>"><a class="text-danger align-middle"
 							onClick="getConfirmation()"><i class="bi bi-trash"></i></a></td>
 					</tr>
 				</tbody>

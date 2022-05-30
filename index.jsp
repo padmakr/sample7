@@ -15,7 +15,7 @@
 <title>Welcome</title>
 </head>
 <body>
-	<div class="container h-100">
+	<div class="container vh-100">
 		<div class="row h-100 align-items-center justify-content-center">
 			<div class="col-md-5">
 				<h1 class="text-center">Hello, Welcome!</h1>
